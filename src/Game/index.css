@@ -1,36 +1,66 @@
+div {
+    border: black 1px solid;
+}
+
 .game-wrapper {
     border: blue 1px solid;
     width: 100%;
 }
+
 .game {
-  width: 1030px;
-  margin: 0 auto;
+    width: 1030px;
+    margin: 0 auto;
 }
+
 .table {
-  background-color: #00a000;
+    background-color: #00a000;
     border: solid 3px #fff;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
     border-radius: 30px;
     color: #fff;
     padding: 5px;
-    -webkit-box-shadow: #000 0 0 5px;
-    -moz-box-shadow: #000 0 0 5px;
     box-shadow: #000 0 0 5px;
     margin-bottom: 15px;
     height: 600px;
+    position: relative;
+
 }
+
 .opponents {
     border: blue 1px solid;
+    display: flex;
+}
+.player {
+}
+.cards {
     display: flex;
     justify-content: center;
 }
 
+.table .cards {
+    position: absolute;
+    top:  50%;
+    left: 50%;
+    margin-top: -61px;
+    margin-left: -103px;
+
+}
+
 .card {
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 110px;
     border: 2px solid rgb(96, 139, 168);
     border-radius: 5px;
-    display: inline-flex;
-
+    margin: 3px 4px 3px 4px;
+}
+.actions {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 30%;
+}
+.action {
+    margin: 1px;
+    border-radius: 5px;
+    padding-left: 2px;
+    padding-right: 2px;
 }
